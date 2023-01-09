@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Get And Change Value From User</title>
+	<style type="text/css">
+		P
+		{
+			height: 20px;
+			width: 180px;
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+<fieldset>
+	<legend>Script:Input</legend>
+<pre>
+	<h1>Input Value From User </h1>
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<h2>Try For Get Value From User And Print In Screen....!</h2><br>
+<h3>Enter Your Input:</h3><input type="" name="" id="in"><br><br>
+<button onclick="getvalue()">Try It</button>
+
+<h3>Your Input value:</h3>
+<p id="out"></p>
+
+<script type="text/javascript">
+
+function getvalue() 
+{
+	var input=document.getElementById('in').value
+	document.getElementById('out').innerHTML=input
+}
+
+</script>
+
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Auto-JS Slider</title>
+	<style type="text/css">
+		.container
+		{
+			height: 350px;
+			width: 700px;
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<img src="image1.jpeg" height="100%" width="100%" id="images">
+</div>
+<script type="text/javascript">
+	let img=document.getElementById('images')
+
+
+	function autoslider() 
+	{
+		if (img.src.match("image1.jpeg")) 
+		{
+			img.src="image2.jpeg"
+		}
+		else if (img.src.match("image2.jpeg")) 
+		{
+			img.src="image3.jpeg"
+		}	
+		else if (img.src.match("image3.jpeg")) 
+		{
+			img.src="image4.jpeg"
+		}
+		else if (img.src.match("image4.jpeg")) 
+		{
+			img.src="image5.jpeg"
+		}
+		else if (img.src.match("image5.jpeg")) 
+		{
+			img.src="image6.jpg"
+		}
+		else if (img.src.match("image6.jpg")) 
+		{
+			img.src="image7.jpeg"
+		}
+		else
+		{
+			img.src="image1.jpeg"
+		}
+
+	setTimeout('autoslider()' ,2000)
+	}
+	autoslider()
+</script>
+</body>
+</html>
