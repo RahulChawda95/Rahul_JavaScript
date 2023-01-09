@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<fieldset>
+	<legend>Theory Of DOM</legend>
+	<pre>
+	<h2>DOM: <mark>Document Object Model (DOM)</mark> is a platform and language-neutral interface that allows programs and 
+	scripts to dynamically access and update the content, structure, and style of a document.</h2>
+
+	<h2><mark>Note:The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</mark></h2>
+<h2>1)Finding HTML Elements</h2>
+	<table border="1" align="center">
+		<th colspan="3">Finding HTML Elements</th>
+		<tr>
+			<td>No.</td>
+			<td align="center"><b>Method</b></td>
+			<td align="center"><b>Description</b></td>
+		</tr>
+		<tr>
+			<td>1)</td>
+			<td>document.getElementById('id')</td>
+			<td>Find an element by element id</td>
+			
+		</tr>
+			<tr>
+			<td>2)</td>
+			<td>document.getElementsByTagName('name')</td>
+			<td>Find elements by tag name</td>
+		</tr>
+			<tr>
+			<td>3)</td>
+			<td>document.getElementsByClassName('name')</td>
+			<td>Find elements by class name</td>
+		</tr>
+	</table>
+	<br>
+	<h2>2)Changing HTML Elements</h2>
+<table border="1" align="center">
+	<th colspan="3">Changing HTML Elements</th>
+	<tr>
+		<td>No.</td>
+		<td align="center"><b>Property</b></td>
+		<td align="center"><b>Description</b></td>
+	</tr>
+	<tr>
+		<td>1)</td>
+		<td>element.innerHTML =  new html content</td>
+		<td>Change the inner HTML of an element</td>
+	</tr>
+	<tr>
+		<td>2)</td>
+		<td>element.attribute = new value</td>
+		<td>Change the attribute value of an HTML element</td>
+	</tr>
+	<tr>
+		<td>3)</td>
+		<td>element.style.property = new style</td>
+		<td>Change the style of an HTML element</td>
+	</tr>
+	<tr>
+		<td>No.</td>
+		<td align="center"><b>Method</b></td>
+		<td align="center"><b>Description</b></td>
+	</tr>
+	<tr>
+		<td>1)</td>
+		<td>element.setAttribute(attribute, value)</td>
+		<td>Change the attribute value of an HTML element</td>
+	</tr>
+</table>
+<br>
+<h2>3)Adding And Deleting Elements</h2>
+<table border="1" align="center">
+	<th colspan="3">Adding and Deleting Elements</th>
+	<tr>
+		<td><b>No.</b></td>
+		<td align="center"><b>Method</b></td>
+		<td align="center"><b>Description</b></td>
+	</tr>
+	<tr>
+		<td>1)</td>
+		<td>document.createElement(element)</td>
+		<td>Create an HTML element</td>
+	</tr>
+	<tr>
+		<td>2)</td>
+		<td>document.removeChild(element)</td>
+		<td>Remove an HTML element</td>
+	</tr>
+	<tr>
+		<td>3)</td>
+		<td>document.appendChild(element)</td>
+		<td>Add an HTML element</td>
+	</tr>
+	<tr>
+		<td>4)</td>
+		<td>document.replaceChild(new, old)</td>
+		<td>Replace an HTML element</td>
+	</tr>
+	<tr>
+		<td>5)</td>
+		<td>document.write(text)</td>
+		<td>Write into the HTML output stream</td>
+	</tr>
+</table>
+
+</pre>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM-Elements</title>
+	<style type="text/css">
+		.container
+		{
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+<fieldset>
+	<legend>Scripts Input:DOM-Element</legend>
+	<div class="container">
+		<h2>Finding HTML Elements</h2>
+		<b>find the elements first. There are several ways to do this:</b>
+		<ol>
+			<li>Finding HTML elements by id</li>
+			<li>Finding HTML elements by tag name</li>
+			<li>Finding HTML elements by class name</li>
+			<li>Finding HTML elements by CSS selectors</li>
+			<li>Finding HTML elements by HTML object collections</li>
+		</ol>
+	</div>
+<pre>
+
+&lt;h3>1)Example Of Finding HTML Element By ID&lt;/h3>
+	&lt;p id="getID">Finding HTML Elements by Id&lt;/p>
+	&lt;p>This example of &lt;b>getElementById&lt;/b> method.&lt;/p>
+	&lt;p id="addID">&lt;/p>
+	&lt;script type="text/javascript">
+
+	<b><mark>input=document.getElementById('getID')</mark>;---->Note:Element Use
+		1st -->store  and get value Inside <u>Input</u> Variable
+		</b>
+
+	<mark>document.getElementById('addID').innerHTML="This Add Some Text + "+input.innerHTML;---->for Output Value inside inner HTML</mark>
+
+	&lt;/script>
+
+
+
+
+&lt;h3>2)Example Of Finding HTML Element By Tag Name&lt;/h3>
+
+&lt;p>Finding HTML Element By Tag name&lt;/p>
+
+&lt;p>This example of &lt;b>getElementsByTag name&lt;/b> method.&lt;/p>
+
+&lt;p id="third">&lt;/p>
+&lt;script type="text/javascript">
+	<b><mark>para=document.getElementsByTagName('p')</mark></b><b>--->Note:Element's Use
+		1st -->store  and get value Inside <u>para</u> Variable
+		</b>
+
+	<mark>document.getElementById('third').innerHTML="This 3rd Paragraph Adding Using JS.&lt;br>"---->For Output Value Inside InnerHTML</mark>
+
+	document.write(para[0].innerHTML+"+ This is Index Value Is 0&lt;br>")
+	
+	document.write(para[1].innerHTML+"+ This is Index Value Is 1")
+	
+&lt;/script>
+
+
+&lt;h3>3)Example Of Finding HTML Element By Class Name.&lt;/h3>
+&lt;p class="paragraph">"Hello JS...!"&lt;/p>
+&lt;p class="paragraph">This Is Second ParaGraph&lt;/p>
+&lt;p class="paragraph">This Is Third ParaGraph&lt;/p>
+&lt;script type="text/javascript">
+
+<b><mark>var para= document.getElementsByClassName("paragraph")</mark></b><b>--->Note:Element's Use
+		1st -->store  and get value Inside <u>para</u> Variable
+		</b>
+<h2>Note:Now,Get Output in form Of Index Value With Adding some Text.</h2>
+<mark>document.write(para[0].innerHTML+ " +This is Oth Index Paragraph add using JS&lt;br>")</mark>
+<mark>document.write(para[1].innerHTML+ " +This is 1st Index Paragraph add using JS&lt;br>")</mark>
+<mark>document.write(para[2].innerHTML+ " +This is 2nd Index Paragraph add using JS")</mark>
+
+&lt;/script>
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output:</legend>
+	<h3>1)Example Of Finding HTML Element By ID</h3>
+	<p id="getID">Finding HTML Elements by Id</p>
+	<p>This example of <b>getElementsById</b> method.</p>
+	<p id="addID"></p>
+	<script type="text/javascript">
+	input=document.getElementById('getID');
+
+	document.getElementById('addID').innerHTML="This Add Some Text + "+input.innerHTML;
+	</script>
+
+
+
+
+<h3>2)Example Of Finding HTML Element By Tag Name</h3>
+
+<p>Finding HTML Element By Tag name</p>
+
+<p>This example of <b>getElementsByTag name</b> method.</p>
+
+<p id="third"></p>
+<script type="text/javascript">
+	para=document.getElementsByTagName('p')
+
+	document.getElementById('third').innerHTML="This 3rd Paragraph Adding Using JS.<br>"
+
+	document.write(para[0].innerHTML+"+ This is Index Value Is 0<br>")
+	
+	document.write(para[1].innerHTML+"+ This is Index Value Is 1")
+	
+</script>
+<h3>3)Example Of Finding HTML Element By Class Name.</h3>
+<p class="paragraph">"Hello JS...!"</p>
+<p class="paragraph">This Is Second ParaGraph</p>
+<p class="paragraph">This Is Third ParaGraph</p>
+<script type="text/javascript">
+
+var para= document.getElementsByClassName("paragraph")
+
+document.write(para[0].innerHTML+ " +This is Oth Index Paragraph add using JS<br>")
+document.write(para[1].innerHTML+ " +This is 1st Index Paragraph add using JS<br>")
+document.write(para[2].innerHTML+ " +This is 2nd Index Paragraph add using JS")
+
+</script>
+</fieldset>
+</body>
+</html>
