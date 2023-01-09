@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider Using JS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.container
+		{
+			height: 500px;
+			width: 100%;
+			border: 1px solid;
+			background: black;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+		.fa-greater-than
+		{
+			color: black;
+			font-size: 48px;
+		}
+		button
+		{
+			height: 100px;
+			width: 50px;
+			position: absolute;
+			top: 200px;
+			right: 0;
+			border: none;
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<img src="img2.jpg" height="100%" width="100%" id="images">
+	<button onclick="slider()"><i class="fa-solid fa-greater-than"></i></button>
+</div>
+<script type="text/javascript">
+	let image=document.getElementById('images')
+
+	console.log(image.src)
+	function slider()
+	{
+		if (image.src.match("img2.jpg")) 
+		{
+			image.src="img3.jfif"
+		}
+		else if (image.src.match("img3.jfif")) 
+		{
+			image.src="img4.png"
+		}
+		else if (image.src.match("img4.png")) 
+		{
+			image.src="img5.png"
+		}
+		else if (image.src.match("img5.png")) 
+		{
+			image.src="img6.png"
+		}
+		else if (image.src.match("img6.png")) 
+		{
+			image.src="img7.png"
+		}
+
+		else
+		{
+			image.src="img2.jpg"
+		}
+	}
+	
+</script>
+</body>
+</html>
