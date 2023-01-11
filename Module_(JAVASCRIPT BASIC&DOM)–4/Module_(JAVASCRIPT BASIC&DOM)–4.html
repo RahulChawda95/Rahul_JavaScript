@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Module (JAVASCRIPT BASIC & DOM) – 4</title>
+</head>
+<body>
+<table border="1"> 
+	<th colspan="2"><h1>Module (JAVASCRIPT BASIC & DOM) – 4</h1></th>
+	<tr>
+		<td><h3>Question No.</h3></td>
+		<td align="center"><h3>Answer.</h3></td>
+	</tr>
+	<tr>
+		<td>Que1.</td>
+		<td><b>What is JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc.</td>
+	</tr>
+	<tr>
+		<td>Que2.</td>
+		<td><b>What is the use of isNaN function?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>The JavaScript isNaN() Function is used to check whether a given value is an illegal number or not. It returns true if the value is a NaN else returns false. It is different from the Number. isNaN() Method.</td>
+	</tr>
+	<tr>
+		<td>Que3.</td>
+		<td><b>What is negative Infinity?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>Number.NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript (i.e., more negative than -Number.MAX_VALUE).JavaScript displays the NEGATIVE_INFINITY value as -Infinity. This value behaves mathematically like infinity; for example, anything multiplied by infinity is infinity, and anything divided by infinity is zero. In ECMAScript v1 and later, you can also use -Infinity instead of Number.NEGATIVE_INFINITY.
+			<b>Syntax:Infinity, isFinite( )</b>
+		</td>
+	</tr>
+	<tr>
+		<td>Que4.</td>
+		<td><b>Which company developed JavaScript? </b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.</td>
+	</tr>
+	<tr>
+		<td>Que5.</td>
+		<td><b>What are undeclared and undefined variables?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>The difference between undefined and undeclared variables in JavaScript is:
+			<ol>
+				<li><b>Undefined</b> variable means a variable has been declared but does not have a value.</li>
+				<li><b>Undeclared</b> variable means that the variable does not exist in the program at all.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td>Que6.</td>
+		<td><b>Write the code for adding new elements dynamically? </b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td><pre>
+			Syntax:
+				<b>document.createElement("&lt;tagName>");</b>
+				Note:Where &lt;tagName> can be any HTML
+				tagName like div, ul, button, etc.
+
+
+				<b>let newDiv = document.createElement("div");</b> 
+				Note:newDiv element has been created
+		</pre></td>
+	</tr>
+	<tr>
+		<td>Que7.</td>
+		<td><b>What is the difference between ViewState and SessionState?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>The basic difference between these two is that the ViewState is to manage state at the client’s end, making state management easy for end-user while SessionState manages state at the server’s end, making it easy to manage content from this end too.</td>
+	</tr>
+	<tr>
+		<td>Que8.</td>
+		<td><b>What is === operator?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.</td>
+	</tr>
+	<tr>
+		<td>Que9.</td>
+		<td><b>How can the style/class of an element be changed?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>Through the DOM, you have access to a style object that describes the style of an element. This style object is defined as a CSSStyleDeclaration; you can see a detailed explanation of this at the W3C documentation of the CSSStyleDeclaration interface. The style object doesn’t quite work the same as some of the other properties defined in your HTML element. Unlike element.href or element.id, which return strings, element.style returns an object. This means you cannot set the style by assigning a string to element.style.The style object has attributes that correspond to the different CSS properties we set. For example, style.color returns the colour that element has set on it. By calling element.style.color = "red"; you can apply the style change dynamically. Below is a function that turns an element’s colour to red when you pass it the element’s id.</td>
+	</tr>
+	<tr>
+		<td>Que10.</td>
+		<td><b>How to read and write a file using JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript. The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads the full file into memory and stores it in a buffer.<br> 
+			<b>1)Syntax:fs.readFile( file_name, encoding, callback_function )</b><br>	<br>	
+			
+			<b>2)Syntax:fs.writeFile( file_name, data, options, callback )</b>
+		</td>
+	</tr>
+	<tr>
+		<td>Que11.</td>
+		<td><b>What are all the looping structures in JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>JavaScript supports different kinds of loops:
+			<ol>
+				<li>for - loops through a block of code a number of times</li>
+				<li>for/in - loops through the properties of an object</li>
+				<li>for/of - loops through the values of an iterable object</li>
+				<li>while - loops through a block of code while a specified condition is true</li>
+				<li>do/while - also loops through a block of code while a specified condition is true</li>
+			</ol><br>
+			<pre>
+			Structure:OF LOOPS
+			1)For Loop:
+			Syntax:
+			for (initialization; condition; increment)  
+				{  
+    				code to be executed  
+				}  
+
+			2)while loop 
+			Syntax:
+			initialization;
+			while (condition)  
+				{  
+				    code to be executed
+				    increment;  
+				}  
+
+			3)do while loop
+			Syntax:
+			intialization;
+			do
+			{  
+    			code to be executed 
+    			increment; 
+			}while (condition);  
+
+</pre>
+		</td>
+	</tr>
+	<tr>
+		<td>Que12.</td>
+		<td><b>How can you convert the string of any base to an integer in JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>In JavaScript parseInt() function (or a method) is used to convert the passed-in string parameter or value to an integer value itself. This function returns an integer of the base which is specified in the second argument of the parseInt() function</td>
+	</tr>
+	<tr>
+		<td>Que13.</td>
+		<td><b>What is the function of the delete operator?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>The <b>delete</b> operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.</td>
+	</tr>
+	<tr>
+		<td>Que14.</td>
+		<td><b>What are all the types of Pop up boxes available in JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>JavaScript has three kind of popup boxes:
+			<ol>
+				<li>Alert box</li>
+				<li>Alert box</li>
+				<li>Prompt box</li>
+			</ol>
+			<h3>Alert Box:</h3>
+			<p>An alert box is often used if you want to make sure information comes through to the user.When an alert box pops up, the user will have to click "OK" to proceed.</p>
+			<p><b>Syntax:window.alert("sometext");</b></p>
+			<h3>Confirm Box</h3>
+			<p>A confirm box is often used if you want the user to verify or accept something.When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.</p>
+			<p><b>Syntax:window.confirm("sometext");</b></p>
+			<h3>Prompt Box</h3>
+			<p>A prompt box is often used if you want the user to input a value before entering a page.When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.</p>
+			<p><b>Syntax:window.prompt("sometext","defaultText");</b></p>
+		</td>
+	</tr>
+	<tr>
+		<td>Que15.</td>
+		<td><b>What is the use of Void (0)?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>In a programming language, void means return nothing. “javascript: void(0)” is similar to void. javascript: void(0) means return undefined as a primitive value. We use this to prevent any negative effects on a webpage when we insert some expression.</td>
+	</tr>
+	<tr>
+		<td>Que16.</td>
+		<td><b>How can a page be forced to load another page in JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>Approach: We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+			<p><b>Syntax: window.location = &lt;Path / URL></b></p>
+		</td>
+	</tr>
+	<tr>
+		<td>Que17.</td>
+		<td><b>What are the disadvantages of using innerHTML in JavaScript?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td><b>Disadvantages of innerHTML:</b>
+			<ol>
+				<li>Event handlers attached to any DOM element are preserved.</li>
+				<li>Replacement is done everywhere.</li>
+				<li>It is not possible to append innerHTML.</li>
+				<li>Breaks the document.</li>
+				<li>Used for Cross-site Scripting.</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
