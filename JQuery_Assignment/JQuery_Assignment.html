@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQuery_Assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+
+	<style type="text/css">
+		.para
+		{
+			height: 150px;
+			width: 400px;
+			border: 1px solid;
+			position: absolute;
+			background: skyblue;
+			margin-top: 0;
+
+		}
+		.btn
+		{
+			margin-left: 405px;
+			margin-top: 10px;
+		}
+		.animate
+		{
+			height: 450px;
+		}
+	</style>
+</head>
+<body>
+<table border="1" align="center">
+	<th colspan="2">JQuery Assignment</th>
+	<tr>
+		<td><b>Number.</b></td>
+		<td align="center"><b>Question/Answer</b></td>
+	</tr>
+	<tr>
+		<td>01.</td>
+		<td><b>What Is JQuery?</b></td>
+	</tr>
+	<tr>
+		<td>Ans.</td>
+		<td>
+		<p>jQuery is a lightweight, "write less, do more", JavaScript library.<br>
+		The purpose of jQuery is to make it much easier to use JavaScript on your website.<br>
+		jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.<br>
+		jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.<br>
+		The jQuery library contains the following features:</p>
+
+<li>HTML/DOM manipulation</li>
+<li>CSS manipulation</li>
+<li>HTML event methods</li>
+<li>Effects and animations</li>
+<li>AJAX</li>
+<li>Utilities</li>
+</td>
+	</tr>
+<tr>
+	<td>02.</td>
+	<td><b>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?</b></td>
+</tr>
+<tr>
+	<td>Ans.</td>
+	<td>
+		<h2>1)Apply CSS Using JQuery</h2>
+		<p><b>For Using Sets or returns the style attribute.Syntax Be Like...</b></p>
+		<p><b> Genral Syntax :- css("propertyname","value");</b><br>
+
+			The following example will set the background-color value for ALL matched elements:<br>
+
+			<b>Example</b><br>
+
+			<b>$("p").css("background-color", "yellow");</b>
+</p>
+	<h2>2)Add Class() In JQuery.</h2>
+	<p>
+		<b>Adds one or more classes to the selected elements.<br> Syntax be like...</b><br><br>
+		<b>
+			$("button").click(function(){<br>
+  			$("#div1").addClass("important blue");<br>
+			});
+		</b>
+	</p>
+	<h2>3)Remove Class() In JQuery.</h2>
+	<p><b>Removes one or more classes from the selected elements<br>Syntax be Like...</b><br><br>
+		<b>Example Syntax Be Like...</b><br>
+		<b>$("button").click(function(){<br>
+  $("h1, h2, p").removeClass("blue");<br>
+});
+</b>
+	<h2>4) Animation In JQuery.</h2>
+	<p>
+		<b>The jQuery animate() method is used to create custom animations.</b><br>
+		<b>Genral Syntax.</b><br>
+		<b>$(selector).animate({params},speed,callback);</b><br>
+		Example.<br>
+		<b>$("button").click(function(){<br>
+  $("div").animate({left: '250px'});<br>
+});</b>
+
+	</p>
+	</td>
+</tr>
+	<td>03.</td>
+	<td><b>How to create slider with animation?</b></td>
+</tr>
+<tr>
+	<td>Ans.</td>
+	<td class="animate" align="top">Example.<br>
+		<pre><b> Syntax Of Jquery..
+			$(".btn").click(function(){
+		  	$(".para").animate({marginTop: "-250px"});
+			});</b>
+		</pre>
+		<button class="btn">Animate Here.</button>	
+		<div class="para">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		
+	</td>
+</tr>
+</table>
+<script type="text/javascript">
+    	$(".btn").click(function(){
+		  $(".para").animate({marginTop: "-250px"});
+		});
+
+		</script>
+</body>
+</html>
