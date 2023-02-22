@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task</title>
+   <style>
+    .main-container
+    {
+        height: 250px;
+        width: 250px;
+        border: 1px solid;
+        margin: 50px auto;
+    }
+    .buttons
+    {
+        height: 100px;
+        width: 800px;
+        border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto;
+        padding: 50px;
+    }
+    .buttons .button1
+    {
+        height: 75px;
+        width: 200px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border-radius: 100px;
+        border: 1px solid;
+        background: #1F618D;
+    }
+    .buttons .button2
+    {
+        height: 75px;
+        width: 200px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border-radius: 100px;
+        border: 1px solid;
+        background: #CB4335;
+    }
+    .buttons .button3
+    {
+        height: 75px;
+        width: 200px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border-radius: 100px;
+        border: 1px solid;
+        background: #138D75;
+    }
+
+
+
+
+
+
+   </style> 
+</head>
+<body>
+    <div class="main-container"></div>
+<div class="buttons">
+    <div class="button1" onclick="button1()">Click Me</div>
+    <div class="button2" onclick="button2()">Click Me</div>
+    <div class="button3" onclick="button3()">Click Me</div>
+</div>
+
+
+</body>
+</html>
+<script>
+    let container=document.querySelector('.main-container')
+    let btn1=document.getElementsByClassName('.button1')
+    let btn2=document.querySelector('.button2')
+    let btn3=document.getElementsByClassName('.button3')
+
+
+    function button1()
+    {
+        container.style.background="#1F618D";
+    }
+    function button2()
+    {
+        container.style.background="#CB4335";
+    }
+
+    function button3()
+    {
+        container.style.background="#138D75";
+    }
+
+
+
+
+
+</script>
