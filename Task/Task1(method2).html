@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container
+        {
+            height: 250px;
+            width: 250px;
+            border: 1px solid;
+            margin: 50px auto;
+        }
+        .buttons
+        {
+
+            height: 100px;
+            width: 600px;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            
+        }
+        .btn1
+        {
+            height: 50px;
+            width: 150px;
+            border: 1px solid;
+            background-color: #34495E;
+            border-radius: 50px;
+            margin-top: 25px;
+        }
+        .btn2
+        {
+            height: 50px;
+            width: 150px;
+            border: 1px solid;
+            background-color: #0B5345;
+            border-radius: 50px;
+            margin-top: 25px;
+        }
+        
+        .btn3
+        {
+            height: 50px;
+            width: 150px;
+            border: 1px solid;
+            background-color: #2874A6;
+            border-radius: 50px;
+            margin-top: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container"></div>
+    <div class="buttons">
+        <div class="btn btn1" onclick="color(0)"></div>
+        <div class="btn btn2" onclick="color(1)"></div>
+        <div class="btn btn3" onclick="color(2)"></div>
+    </div>
+</body>
+</html>
+<script>
+    let container=document.querySelector('.main-container')
+    console.log(container)
+let btn=document.querySelectorAll('.btn')
+console.log(btn)
+i=btn.length
+console.log(i)
+function color(i)
+{
+    if (i == 0)
+    {
+        container.style.background="#34495E"
+    }
+    else if(i ==1)
+    {
+        container.style.background="#0B5345"
+    }
+    else if(i == 2){
+        container.style.background="#2874A6"
+    }
+}
+
+</script>
