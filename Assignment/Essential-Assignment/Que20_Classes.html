@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Input</legend>
+      <pre>
+        class muiltiply {
+            constructor(a, b) {
+              let num1 = prompt("Enter First Number:");
+              let num2 = prompt("Enter Second number:");
+        
+              this.a = num1;
+              this.b = num2;
+        
+              let mul = num1 * num2;
+              document.write("Muiltiplication of Number Is:" + mul);
+            }
+          }
+        
+          let res = new muiltiply();
+      </pre>
+    </fieldset>
+
+    <fieldset>
+      <legend>Output</legend>
+
+      <button onclick="new muiltiply()">Get Muiltiply Two Number</button>
+      <h2 id="result"></h2>
+    </fieldset>
+  </body>
+</html>
+<script>
+  class muiltiply {
+    constructor(a, b) {
+      let num1 = prompt("Enter First Number:");
+      let num2 = prompt("Enter Second number:");
+
+      this.a = num1;
+      this.b = num2;
+
+      let mul = num1 * num2;
+      document.getElementById("result").innerHTML =
+        "Muiltiplication of Number Is:" + mul;
+    }
+  }
+</script>

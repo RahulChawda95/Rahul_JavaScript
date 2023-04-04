@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Input</legend>
+      <pre>
+        let data = new Promise((Yes, No) => {
+          let a = prompt("Enter Born Year:");
+          let b = prompt("Re-Enter Born Year:");
+          if (a == b) {
+            Yes("true");
+          } else {
+            no("Wrong");
+          }
+        })
+          .then((response) => {
+            document.write(response);
+          })
+          .catch((error) => {
+            document.write(error);
+          });
+      </pre>
+    </fieldset>
+    <h2>Result</h2>
+  </body>
+</html>
+<script>
+  let data = new Promise((Yes, No) => {
+    let a = prompt("Enter Born Year:");
+    let b = prompt("Re-Enter Born Year:");
+    if (a == b) {
+      Yes("true");
+    } else {
+      No("Wrong");
+    }
+  })
+    .then((response) => {
+      document.write(response);
+    })
+    .catch((error) => {
+      document.write(error);
+    });
+</script>

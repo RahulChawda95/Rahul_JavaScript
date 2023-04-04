@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>Constructor Example</h1>
+    <fieldset>
+        <legend>About Us</legend>
+    
+    <h2>Using the "this" Keyword</h2>
+    <p>When the this keyword is used in a constructor, it refers to the newly created object:</p>
+    <pre>
+        <h2>Input:</h2>
+        function display()
+        {
+            this.name="Rahul"
+            this.lname="Chawda"
+            this.RollNo="56"
+        }
+        var display = new display();
+    </pre>
+    </fieldset>
+
+    <fieldset>
+        <legend>Output</legend>
+        <p id="fullName"></p>
+        <p id="rollno"></p>
+
+        <script>
+            function display()
+            {
+                this.name="Rahul"
+                this.lname="Chawda"
+                this.RollNo="56"
+            }
+            var display = new display();
+           document.getElementById('fullName').innerHTML=display.name +" " +display.lname;
+           document.getElementById('rollno').innerHTML=display.RollNo;
+        </script>
+    </fieldset>
+    <fieldset>
+        <legend>Input</legend>
+        <h2>Create Multiple Objects</h2>
+        <p>In JavaScript, multiple objects can be created in a constructor:</p>
+        <pre>
+            <h2>Input</h2>
+            function display()
+            {
+                this.name="Rahul"
+                this.lname="Chawda"
+                this.RollNo="56"
+            }
+            var user=display()
+           var user1=display()
+           
+           
+        </pre>
+        <p>two objects are created using the same constructor.</p>
+    </fieldset>
+    <fieldset>
+        <legend>Output</legend>
+        <p id="user"></p>
+        <script>
+            
+             function info()
+            {
+                this.name="First name"
+                this.lname="Last Name"
+                this.RollNo="Number"
+            }
+           var user= new info()
+           var user1= new info()
+           console.log(info)
+            document.getElementById('user').innerHTML= user.name +" "+user1.lname +"<br>"+"Your Roll Number Is:"+user.RollNo;
+        </script>
+    </fieldset>
+    <fieldset>
+        <legend>Input</legend>
+        <h2></h2>
+    </fieldset>
+
+</body>
+</html>

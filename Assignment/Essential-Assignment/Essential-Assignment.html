@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <table border="1">
+        <th colspan="2">
+            <h1>Essential-Js Assignment</h1>
+        </th>
+        <tr>
+            <td>Que01.</td>
+            <td><b>How can you create an object in javascript? explain with an example.</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <h1>Creating object In javascript</h1>
+                <ol>There are 3 ways to create objects.
+                    <li><b>By object literal</b></li>
+                    <li><b>By creating instance of Object directly (using new keyword)</b></li>
+                    <li><b>By using an object constructor (using new keyword)</b></li>
+                </ol>
+                <h1>1)JavaScript Object by object literal</h1>
+                <p>The syntax of creating object using object literal is given below:</p>
+                <h3>object={property1:value1,property2:value2.....propertyN:valueN}</h3>
+
+
+                <h1>2)By creating instance of Object</h1>
+                <p>The syntax of creating object directly is given below:</p>
+                <h3>var objectname=new Object();</h3>
+
+                <h1>By using an Object constructor</h1>
+                <p>The <b>this keyword</b> refers to the current object.</p>
+                <p>We can define method in JavaScript object. But before defining method, we need to add property in the
+                    function with same name as method.</p>
+
+                <p>Example: <a href="Que01_Object.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que02.</td>
+            <td><b>How can you create an Array in javascript? explain with example.</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <h1>Creating Array In Javascript</h1>
+                <ol>There are 3 Ways To Creat Array.
+                    <li><b>By array literal</b></li>
+                    <li><b>By creating instance of Array directly (using new keyword)</b></li>
+                    <li><b>By using an Array constructor (using new keyword)</b></li>
+                </ol>
+                <h1>1)By Array Literal</h1>
+                <p>The syntax of creating array using array literal is given below:</p>
+                <h3>var arrayname=[value1,value2.....valueN];</h3>
+
+                <h1>2) JavaScript Array directly (new keyword)</h1>
+                <p>The syntax of creating array directly is given below:</p>
+                <h3>var arrayname=new Array();---->Define With new Keyword</h3>
+
+                <h1>3) JavaScript array constructor (new keyword)</h1>
+                <p>The Syntax Of Creating Array Using Constructor</p>
+                <h3>var ArrayName=new Array("value1","value2","value3");</h3>
+
+                <br>
+                <p>Example: <a href="Que02_Creat-Array.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que03.</td>
+            <td><b>What is Callback? Explain with examples.</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>Call Back Is <b>"I will call back later!"</b></p>
+                <p>A callback is a function passed as an argument to another function
+
+                    This technique allows a function to call another function
+
+                    A callback function can run after another function has finished</p>
+                <ol>
+                    <li><b>Function Sequence</b></li>
+                    <li><b>Sequence Control</b></li>
+                    <li><b> synchronous Function</b></li>
+
+                </ol>
+                <h1>Asynchronous Function type</h1>
+                <h1>1)Function Sequence</h1>
+                <p>JavaScript functions are executed in the sequence they are called. Not in the sequence they are
+                    defined.</p>
+                <h1>2)Sequence Control</h1>
+                <p>Sometimes you would like to have better control over when to execute a function.</p>
+                <h1>Synchronous Function Type</h1>
+                <p>A callback function is a function passed into another function as an argument, which is then invoked
+                    inside the outer function to complete some kind of routine or action.</p>
+
+                <p>Example: <a href="#">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que04.</td>
+            <td><b>What are the ways to define a variable in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <ol>4 Ways to Declare a JavaScript Variable:
+                    <li><b>Using var</b></li>
+                    <li><b>Using let</b></li>
+                    <li><b>Using const</b></li>
+                    <li><b>Using nothing</b></li>
+                </ol>
+                <h2>1)var Method</h2>
+                <p>
+                    var x=12;------>Declaration(Allowed) <br>
+                    var x=65;------>Re-Declaration(Allowed) <br>
+                    var x=33;------>Re-Assignment(Allowed)
+                </p>
+                <h2>2)Let Method</h2>
+                <p>
+                    let y="Rahul"----->Declaration(Allowed) <br>
+                    let y=65;------>Re-Declaration(Not-Allowed) <br>
+                    let y=55;----->Re-Assignment(Allowed)
+                </p>
+                <h2>3)Const Method</h2>
+                <p>
+                    const z=333;---->Declaration(Allowed) <br>
+                    const z=99;----->Re-Declaration(Not-Allowed) <br>
+                    const z=3;----->Re-Assignment(Not-Allowed)
+                </p>
+                <h2>4)Using Nothing</h2>
+                <p>
+                    x=65; <br>
+                    y=55; <br>
+                    z=32;
+
+                </p>
+                <b>Note:When Using Nothing To Declare Variable Script By Default Take Var Method to store Variable,And
+                    All Value Allowed It.</b>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Que05.</td>
+            <td><b>What is the difference between null and undefined?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <table border="1">
+                    <th>Area</th>
+                    <th>Undefined</th>
+                    <th>Null</th>
+                    <tr>
+                        <td>Definition</td>
+                        <td>Undefined means the variable has been declared, but its value has not been assigned.</td>
+                        <td>Null means an empty value or a blank value.</td>
+                    </tr>
+                    <tr>
+                        <td>The typeof operator</td>
+                        <td>The typeof() operator returns undefined for an undefined variable.</td>
+                        <td>The typeof() operator returns the type as an object for a variable whose value is assigned
+                            as null.</td>
+
+                    </tr>
+                    <tr>
+                        <td>On performing arithmetic operations</td>
+                        <td>It returns NaN on performing arithmetic operations.</td>
+                        <td>converts to 0 then perform the operation</td>
+
+                    </tr>
+                    <tr>
+                        <td>Is it an assignment value?</td>
+                        <td>No, as there is no value assigned to the variable, it becomes undefined.</td>
+                        <td>Yes, as we assign null to a variable, it is an assignment value.</td>
+                    </tr>
+                </table>
+                <b>Note:</b>
+                <p> <b>Null</b> is basically an assignment value. The variable which has been assigned as null contains
+                    no value and is empty.</p>
+                <p><b>Undefined</b> is when we declare a variable but do not assign a value to it(define it), the
+                    variable becomes undefined.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que06.</td>
+            <td><b>What is NaN in javascript? Any base to integer in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>
+                <ul> <b>About NaN</b>
+                    <li>In JavaScript, NaN is short for "Not-a-Number".</li>
+
+                    <li>In JavaScript, NaN is a number that is not a legal number.</li>
+
+                    <li> The Global NaN property is the same as the Number.Nan property.</li>
+                </ul>
+                </p>
+                <p>The parseInt method parses a value as a string and returns the first integer.</p>
+                <p><b>Note:If the first character cannot be converted, NaN is returned.</b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que07.</td>
+            <td><b>What will be the output of below code?</b></td>
+
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <fieldset>
+                    <legend>Input Value</legend>
+                    <pre>
+                    var Y=1
+                    if (function F(){})
+                    {
+                    y += Typeof F;&lt;/span>
+                    }
+                    console.log(y);
+                </pre>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Output Of Function</legend>
+                    <p>Uncaught SyntaxError: Unexpected identifier 'F'</p>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>Que08.</td>
+            <td><b>How can you convert the string of in Integer Value </b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>The parseInt method parses a value as a string and returns the first integer.</p>
+                <b>Notes:</b>
+                <p>1)If the first character cannot be converted, NaN is returned.</p>
+                <p>2)Leading and trailing spaces are ignored.</p>
+                <p>3)Only the first integer found is returned.</p>
+
+                <p>Example: <a href="Que08_parseInt.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que09.</td>
+            <td><b>When should I use the Arrow function in Javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+               <p><b> Syntax for writing an Arrow Function:</b> Following is the simple syntax of writing an arrow function:</p>
+
+               <h3> let name_of_function = (parameters) => ...</h3>
+
+               <p> We may also include any number of parameters inside the round braces (way to show that the variable is
+                treated as a function).</p>
+
+                <p> <b> Advantages of using Arrow Function:</b> The following points will describe the list of advantages which are
+                associated with using Arrow functions instead of normal functions- </p>
+                    <ul>
+                        <li>This arrow function reduces lots of code and makes the code more readable.</li>
+                        <li>Arrow function syntax automatically binds “this” to the surrounding code's context.</li>
+                        <li>Writing the arrow => is more flexible as compared with the writing function keyword.</li>
+                    </ul>                
+               <p><b> When one should use the Arrow function:</b> Since in previous sections, we have discussed the syntax,
+                advantages, and flexibility associated with the arrow function syntax, here we will see and analyze when
+                and when we should use arrow functions instead of normal functions.</p>
+                <ul>
+                    <li> We may use arrow function syntax with our method associated with the array, like <b> map(), reduce(),
+                        filter() </b>since by using arrow function syntax instead of using normal function syntax one could easily
+                        read and understand as well as write the code more effectively.</li>
+                
+               
+               <li> If we may use arrow functions while declaring promises and callbacks then it would be much easier for
+                any user to understand the concept behind them otherwise by using traditional function syntax concepts
+                like callback hells, promise chaining would eventually become more difficult to understand, or even
+                writing would become a little complex.</li>
+            </ul>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Que10.</td>
+            <td><b>Explain the Prototype with example</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>The prototype is an object that is associated with every functions and objects by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible.
+                    Every function includes prototype object by default. <br>
+                    The prototype object is special type of enumerable object to which additional properties can be attached to it which will be shared across all the instances of it's constructor function.</p>
+                    <p>prototype property can be accessed using &lt;function-name>.prototype. However, an object (instance) does not expose prototype property, instead you can access it using __proto__.</p>
+                    <b>Note:The prototype property is special type of enumerable object which cannot be iterate using for..in or foreach loop.</b>              
+                    <p>Example: <a href="Que10_Prototype.html">Click Here</a></p>  
+            </td>
+        </tr>
+        <tr>
+            <td>Que11.</td>
+            <td><b>What is the difference between .forEach loop and .map loop?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p> <b> JavaScript .forEach() and .map():</b> These are the methods that are used to iterate on an array, more technically they invoke the provided callback function for every element of an array.</p>
+                <p><b>Syntax:</b></p>
+                <h3>forEach((currentElement, indexOfElement, array) => { ... } )</h3>
+                <h3>map((currentElement, indexOfElement, array) => { ... } )</h3>
+
+                <b>Parameter:</b>
+                <ul>
+                    <li> <b> currentElement:</b> This is the current element that is being processed in the callback.</li>
+                    <li><b>indexOfElement:</b>The index of that current element inside the array.</li>
+                    <li><b>Array:</b>The array on which the whole operation is being performed.</li>
+                </ul>
+                <table border="1">
+                    <th>forEach()</th>
+                    <th>map()</th>
+                    <tr>
+                        <td>The forEach() method does not returns a  new array based on the given array.</td>
+                        <td>The map() method returns an entirely new array.</td>
+                    </tr>
+                    <tr>
+                        <td>The forEach() method returns “undefined“.</td>
+                        <td>The map() method returns the newly created array according to the provided callback function.</td>
+                    </tr>
+                    <tr>
+                        <td>The forEach() method doesn't return anything hence the method chaining technique cannot be applied here.</td>
+                        <td>With the map() method, we can chain other methods like, reduce(),sort() etc.</td>
+                    </tr>
+                    <tr>
+                        <td>It is not executed for empty elements</td>
+                        <td>It does not change the original array.</td>
+                    </tr>
+                </table>
+                <p>Example: <a href="forEach&Map.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que12.</td>
+            <td><b>What is a constructor in javascript? Explain with examples.</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>A constructor is a special function that creates and initializes an object instance of a class. In JavaScript, a constructor gets called when an object is created using the new keyword. <br>
+                    The purpose of a constructor is to create a new object and set values for any existing object properties.</p>
+                <ul>
+                    <li>The constructor keyword is used to declare a constructor method.</li>
+                    <li>The class can contain one constructor method only.</li>
+                    <li>JavaScript allows us to use parent class constructor through super keyword.</li>
+                </ul>
+                <p>Example: <a href="Que12_Constructor.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que13.</td>
+            <td><b>What is the role of closure in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td><b>Closure: A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.</b>
+            <h3>Example <a href="Que13_Clousers.html">Click Here</a></h3>
+        </td>
+        </tr>
+        <tr>
+            <td>Que14.</td>
+            <td><b>What is the output of below code?</b>
+                <pre>
+                    var array = ["DataFlair", 2019, 1.0, true];
+                    var msg = "Array: [";
+                    for(var i = 0; i < array.length-1; i++){
+                    msg += array[i] + ", ";
+                    }
+                    msg += array[array.length-1] + "]";
+                    console.log(msg);
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <script>
+                    var array = ["DataFlair", 2019, 1.0, true];
+var msg = "Array: [";
+for(var i = 0; i < array.length-1; i++){
+msg += array[i] + ", ";
+}
+msg += array[array.length-1] + "]";
+document.write(msg)
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>Que15.</td>
+            <td><b>What is meant by “this” in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td><p>In JavaScript, the this keyword refers to an object.</p>
+                <p>Which object depends on how this is being invoked (used or called).</p>
+                <p>The this keyword refers to different objects depending on how it is used:</p>
+                <ul>
+                    <li>In an object method, this refers to the object.</li>
+                    <li>Alone, this refers to the global object.</li>
+                    <li>In a function, this refers to the global object</li>
+                    <li>In a function, in strict mode, this is undefined.</li>
+                    <li>In an event, this refers to the element that received the event.</li>
+                    <li>Methods like call(), apply(), and bind() can refer this to any object.</li>
+                </ul>
+                <b>Example: <a href="Que15_This-keyword.html">Click Here</a></b>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Que16.</td>
+            <td><b>How to validate a form in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans</td>
+            <td><b>Show Through Example:</b> <a href="Que16_FormValidate.html">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>Que17.</td>
+            <td><b>What are object prototypes?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>The prototype object is special type of enumerable object to which additional properties can be attached to it which will be shared across all the instances of it's constructor function.</p>
+                <p>Example: <a href="Que17_Prototype-Object.html"></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que18.</td>
+            <td><b>What is the rest parameter?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>The rest parameter allows to represent an indefinite number of arguments as an array.</p>
+                <pre>
+                    <h1>Syntax:</h1>
+                    function function_name (a,…args)
+                        {
+                            Block of statement; 
+                        }   
+                </pre>
+                <p>Example: <a href="Que18_Rest-parameter.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que19.</td>
+            <td><b>What is the use of promises in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td>
+                <p>A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.</p>
+                <p>Example: <a href="Que19_Promise.html">Click Here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Que20.</td>
+            <td><b>What are classes in javascript?</b></td>
+        </tr>
+        <tr>
+            <td>Ans.</td>
+            <td><p>Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are unique to classes.</p>
+            <p>Example: <a href="Que20_Classes.html">Click Here</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

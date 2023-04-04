@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this Keyword</title>
+  </head>
+  <body>
+    <h2>1)this in a Method</h2>
+    <fieldset>
+      <legend>Input:</legend>
+      <pre>
+        
+        let Schoolinfo = {
+            Name: "Rahul",
+            lastname: "Chawda",
+            RollNumber: 15,
+  
+            FullName: function () {
+              return (
+                this.Name +
+                " " +
+                this.lastname +
+                " " +
+                "Your RollNumber is:" +
+                this.RollNumber
+              );
+            },
+          };
+          document.getElementById("out1").innerHTML =
+            " " + " Full Name Is:" + Schoolinfo.FullName();
+      </pre>
+    </fieldset>
+    <fieldset>
+      <legend>Output:</legend>
+      <div id="out1"></div>
+      <script>
+        let Schoolinfo = {
+          Name: "Rahul",
+          lastname: "Chawda",
+          RollNumber: 15,
+
+          FullName: function () {
+            return (
+              this.Name +
+              " " +
+              this.lastname +
+              " " +
+              "Your RollNumber is:" +
+              this.RollNumber
+            );
+          },
+        };
+        document.getElementById("out1").innerHTML =
+          " " + " Full Name Is:" + Schoolinfo.FullName();
+      </script>
+    </fieldset>
+
+    <h2>2)this Alone</h2>
+    <fieldset>
+      <legend>input</legend>
+      <pre>
+        let x = this;
+        document.getElementById("Demo").innerHTML = x;
+      </pre>
+    </fieldset>
+    <fieldset>
+      <legend>Output</legend>
+      <p id="Demo"></p>
+      <script>
+        let x = this;
+        document.getElementById("Demo").innerHTML = x;
+      </script>
+    </fieldset>
+    <h2>3)this in a Function (Default)</h2>
+    <fieldset>
+      <legend>Input:</legend>
+      <pre>
+        document.getElementById("Demo2").innerHTML = object();
+        function object() {
+          return this;
+        }
+      </pre>
+    </fieldset>
+    <fieldset>
+      <legend>Output</legend>
+      <p id="Demo2"></p>
+      <script>
+        document.getElementById("Demo2").innerHTML = object();
+        function object() {
+          return this;
+        }
+      </script>
+    </fieldset>
+    <h2>4)this in a Function (Strict)</h2>
+    <fieldset>
+      <legend>Input</legend>
+      <pre>
+        "use strict";
+        document.getElementById("Demo3").innerHTML = object1();
+        function object1() {
+          return this;
+        }
+      </pre>
+    </fieldset>
+
+    <fieldset>
+      <legend>Output</legend>
+      <p id="Demo3"></p>
+      <script>
+        "use strict";
+        document.getElementById("Demo3").innerHTML = object1();
+        function object1() {
+          return this;
+        }
+      </script>
+    </fieldset>
+    <h2>5)this in Event Handlers</h2>
+    <fieldset>
+      <legend>Input</legend>
+      <pre>
+        &lt;button onclick="this.style.background='black',this.style.color='white'">
+            Click me to Background Change
+          &lt;/button>
+      </pre>
+    </fieldset>
+    <fieldset>
+      <legend>Output</legend>
+      <button onclick="this.style.background='black',this.style.color='white'">
+        Click me to Background Change
+      </button>
+    </fieldset>
+  </body>
+</html>

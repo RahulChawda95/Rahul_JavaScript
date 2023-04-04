@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que03_Callback</title>
+</head>
+
+<body>
+    <h1>Asynchronous Function Type</h1>
+    <fieldset>
+        <legend>Function Sequence Input:</legend>
+    <h1>1)Function Sequence</h1>
+
+        <pre>
+        function first()
+        {
+            document.write("Hello.......!")
+        }
+        function second()
+        {
+            document.write("Rahul Chawda")
+        }
+        first()
+        second()
+    </pre>
+    </fieldset>
+    <fieldset>
+        <legend>Output</legend>
+        <script>
+            function first() {
+                document.write("Hello.......!")
+            }
+            function second() {
+                document.write("Rahul Chawda")
+            }
+            first()
+            second()
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sequence Control Input</legend>
+
+<h1>2)Sequence Control</h1>
+        <pre>
+
+        
+<b> function</b>
+   
+function greet(name, callback)
+{
+    name=prompt("Enter Your Name:")
+   
+    document.getElementById('name1').innerHTML="Hey...."+' '+name+"&lt;br>";
+    
+    callback();
+}
+<b> callback function</b>
+function callMe() {
+    document.getElementById('info').innerHTML="I am callback function";
+   
+}
+
+<b> passing function as an argument</b>
+greet(name,callMe)
+</pre>
+    </fieldset>
+    <fieldset>
+        <legend>Output</legend>
+        <h2 id="name1"></h2>
+        <h2 id="info"></h2>
+<p>Example: <button onclick="greet(name,callMe)">Click Me</button></p>       
+        <script>
+        // function
+   
+function greet(name, callback)
+{
+    name=prompt("Enter Your Name:")
+   
+    document.getElementById('name1').innerHTML="Hey...."+' '+name+"<br>";
+    
+    callback();
+}
+// callback function
+function callMe() {
+    document.getElementById('info').innerHTML="I am callback function";
+   
+}
+
+// passing function as an argument
+// greet(name,callMe)
+          
+        </script>
+    </fieldset>
+</body>
+
+</html>

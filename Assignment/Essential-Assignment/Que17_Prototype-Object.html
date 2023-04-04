@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Object</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Input</legend>
+      <pre>
+            
+  function detail(fname, lname, age, course) {
+    this.firstname = fname;
+    this.lastname = lname;
+    this.age = age;
+    this.course = course;
+  }
+  let person1 = new detail("Rahul", "Chawda", 26, "Front-End");
+  document.getElementById("Demo").innerHTML =
+    "Hello...!" + person1.firstname + " " + person1.lastname;
+        </pre
+      >
+    </fieldset>
+    <fieldset>
+      <legend>Output</legend>
+
+      <h2 id="Demo"></h2>
+    </fieldset>
+  </body>
+</html>
+<script>
+  function detail(fname, lname, age, course) {
+    this.firstname = fname;
+    this.lastname = lname;
+    this.age = age;
+    this.course = course;
+  }
+  let person1 = new detail("Rahul", "Chawda", 26, "Front-End");
+  document.getElementById("Demo").innerHTML =
+    "Hello...!" + person1.firstname + " " + person1.lastname;
+</script>

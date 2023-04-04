@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Input Value</legend>
+        <pre>
+            function SchoolInfo(n1,ln,Rn,Sc)
+            {
+                this.name=n1;
+                this.lname=ln;
+                this.RollNo=Rn;
+                this.School=Sc;
+            }
+    var school= new SchoolInfo--------> Changing Prototype to Object;
+
+        </pre>
+    </fieldset>
+    <fieldset>
+        <legend>Output</legend>
+        <p id="Demo1"></p>
+        <p id="Demo2"></p>
+        <p id="Demo3"></p>
+        <p id="Demo4"></p>
+        <p id="Demo5"></p>
+
+    </fieldset>
+</body>
+</html>
+<script>
+    function SchoolInfo(n1,ln,Rn,Sc)
+    {
+        this.name=n1;
+        this.lname=ln;
+        this.RollNo=Rn;
+        this.School=Sc;
+    }
+    var school= new SchoolInfo
+    document.getElementById('Demo1').innerHTML="SchoolInfo.__proto__ :"+SchoolInfo.__proto__;
+    document.getElementById('Demo2').innerHTML="SchoolInfo.prototype :"+SchoolInfo.prototype;
+    document.getElementById('Demo3').innerHTML="typeof school :"+typeof school;
+
+</script>

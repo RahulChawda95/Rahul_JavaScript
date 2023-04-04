@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Input</legend>
+        <pre>
+            <h2>forEach Method</h2>
+            let NewArray=[6,10,3,5]
+            NewArray.forEach((number,index)=>{
+                NewArray[index]=number;
+        
+            })
+            <h2>map Method</h2>
+            let NewArray2=[65,55,25,35,99]
+            NewArray2.map((numbers,index)=>{
+                NewArray2[index]=numbers;
+            })
+        </pre>
+    </fieldset>
+    <fieldset>
+        <legend>Output</legend>
+        <p id="Demo1"></p>
+        <p id="Demo2"></p>
+        
+    </fieldset>
+</body>
+</html>
+<script>
+    let NewArray=[6,10,3,5]
+    NewArray.forEach((number,index)=>{
+        NewArray[index]=number;
+
+    })
+    document.getElementById('Demo1').innerHTML="forEach Loop Array Number:"+NewArray;
+    let NewArray2=[65,55,25,35,99]
+    NewArray2.map((numbers,index)=>{
+        NewArray2[index]=numbers;
+    })
+    document.getElementById('Demo2').innerHTML="map Loop Anrray Number:"+NewArray2;
+</script>

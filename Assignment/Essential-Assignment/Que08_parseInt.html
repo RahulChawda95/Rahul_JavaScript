@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>parseInt Method</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>input</legend>
+      <pre>
+        document.getElementById("result").innerHTML =
+    parseInt("121") +
+    "&lt;br>" +
+    parseInt("1000 Rs") +
+    "&lt;br>" +
+    parseInt("I have 500$") +
+    "&lt;br>";
+      </pre>
+    </fieldset>
+    <fieldset>
+      <legend>Output</legend>
+      <h2>parseInt() parses a string and returns the first integer:</h2>
+      <p id="result"></p>
+    </fieldset>
+  </body>
+</html>
+<script>
+  document.getElementById("result").innerHTML =
+    parseInt("121") +
+    "<br>" +
+    parseInt("1000 Rs") +
+    "<br>" +
+    parseInt("I have 500$") +
+    "<br>";
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closures</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Input:Closueres</legend>
+      <pre>
+        function table() {
+            let nums = document.getElementById("input").value;
+            let i = 1;
+            for (; i <= 10; i++) {
+              function muiltiplication(nums) {
+                mul = nums * i;
+                document.write(nums + " *" + i + "=" + mul + "&lt;br>");
+              }
+              muiltiplication(nums);
+            }
+          }      
+      </pre>
+    </fieldset>
+    <fieldset>
+      <legend>Output</legend>
+      <span>Enter Value <input type="text" name="" id="input" value="" /></span>
+      <button onclick="table()">Click here</button>
+    </fieldset>
+  </body>
+</html>
+<script>
+  function table() {
+    let nums = document.getElementById("input").value;
+
+    let i = 1;
+    for (; i <= 10; i++) {
+      function muiltiplication(nums) {
+        mul = nums * i;
+        document.write(nums + " * " + i + " = " + mul + "<br>");
+      }
+      muiltiplication(nums);
+    }
+  }
+</script>

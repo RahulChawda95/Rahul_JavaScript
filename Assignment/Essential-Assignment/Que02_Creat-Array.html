@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat-Array</title>
+</head>
+<body>
+    <h1>1)By Array Literal</h1>
+    <b>Syntax:</b>
+    <p><b>var array1=["Apple","Kiwi","Orange"];</b></p>
+    <script>
+        var array1=["Apple","Kiwi","Orange"];
+        for(i=0;i<array1.length;i++)
+        {
+        document.write(array1[i]+"<br>")
+        }
+    </script>
+    <h1>2) JavaScript Array directly (new keyword)</h1>
+    <b>Syntax:</b>
+    <p><b>let array2=new Array(); <br>
+            array2[0]="Apple" <br>
+            array2[1]="Kiwi" <br>
+            array2[2]="Orange"
+    </b></p>
+    <script>
+        let array2=new Array()
+        array2[0]="Apple";
+        array2[1]="Kiwi";
+        array2[2]="Orange";
+
+        for(i=0;i<array2.length;i++)
+        {
+        document.write(array2[i]+"<br>")
+        }
+    </script>
+    <h1>3)JavaScript array constructor (new keyword)</h1>
+    <b>Syntax:</b>
+    <p><b>let Array3=new Array("Apple","Kiwi","Orange");</b></p>
+
+    <script>
+        let array3=new Array("Apple","Kiwi","Orange");
+        for(i=0;i<array3.length;i++)
+        {
+        document.write(array3[i]+"<br>")
+        }
+    </script>
+</body>
+</html>

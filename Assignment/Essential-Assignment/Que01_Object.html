@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+   <h1>1)By object literal</h1>
+   <b>syntax:</b>
+   <p><b>object={RollNo:102,Name:"Rahul",Surname:Chawda}</b></p>
+   <script>
+    let object={RollNo:"102",Name:"Rahul",Surname:"Chawda"}
+    document.write("Hello..! "+object.Name+" "+object.Surname+"Your RollNumber Is: "+object.RollNo)
+   </script> 
+
+   <h1>2)By creating instance of Object</h1>
+   <b>syntax:</b>
+   <p><b>var object1=new Object(); <br>
+            object1.RollNo:"102"; <br>
+            object1.Name:"Rahul"; <br>
+            object1.Surname:"Cawda";
+   </b></p>
+   <script>
+    var object1=new Object(); 
+            object1.RollNo = 102; 
+            object1.Name="Rahul"; 
+            object1.Surname="Cawda";
+    document.write("hey..."+object1.Name+" "+"Your RollNumber Is:"+object1.RollNo)
+   </script>
+
+   <h1>3)By using an Object constructor</h1>
+   <b>syntax</b>
+   <p><b>
+        <p>1)First Construct Object</p>
+    function object2(firstname,lastname,course)----->Define Parameter <br>
+    { <br>
+        this.firstname=firstname; <br>
+        this.lastname=lastname; <br>
+        this.course=course; <br>
+    }
+    <p><b>2) Define Object <br>
+
+        let obj2=new object2("Rahul","Chawda","React-JS")</b></p>
+         
+</b></p>
+<script>
+    //First Construct Object
+    function object2(firstname,lastname,course)
+    {
+        this.firstname=firstname; 
+        this.lastname=lastname;
+        this.course=course;
+
+    } 
+    // Define Object
+    let obj2=new object2("Rahul","Chawda","React-JS")
+    document.write("Hey..."+obj2.firstname+" "+obj2.lastname+" You Are Learning :"+obj2.course)
+        
+</script>
+</body>
+</html>
